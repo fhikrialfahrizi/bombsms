@@ -20,17 +20,13 @@ function jdidbom($no, $jum, $wait){
         flush();
     }
 }
-print "SMS BOMBER BY Angga ID\n";
-print "https://fb.me/angaid157\n\n\n";
 
-
-echo "Nomor? (ex : 8xxxx)\nInput : ";
+echo "Nomor Target (ex : 8xxxx)\nInput : ";
 $nomor = trim(fgets(STDIN));
-echo "Jumlah?\nInput : ";
+echo "Jumlah Pesan\nInput : ";
 $jumlah = trim(fgets(STDIN));
-echo "Jeda? 0-9999999999 (ex:0)\nInput : ";
+echo "Delay\nInput : ";
 $jeda = trim(fgets(STDIN));
 $execute = jdidbom($nomor, $jumlah, $jeda);
 print $execute;
-print "DONE ALL SEND\n";
 ?>
