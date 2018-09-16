@@ -20,11 +20,11 @@ function phd($no, $jum, $wait){
         flush();
     }
 }
-echo "Nomor? (ex : 628xxxx)\nInput : ";
+echo "Nomor Target (ex : 628xxxx)\nInput : ";
 $nomor = trim(fgets(STDIN));
-echo "Jumlah?\nInput : ";
+echo "Jumlah Pesan\nInput : ";
 $jumlah = trim(fgets(STDIN));
-echo "Jeda? 0-9999999999 (ex:0)\nInput : ";
+echo "Delay\nInput : ";
 $jeda = trim(fgets(STDIN));
 $execute = phd($nomor, $jumlah, $jeda);
 print $execute;
